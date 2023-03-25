@@ -5,14 +5,14 @@
 replicaCount: 1
 
 image:
-  repository: liorkamrat/hello-arc
+  repository: itzg/minecraft-server
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
   tag: "latest"
 
 env:
-  name: MESSAGE
-  value: Helm chart testing!
+  name: EULA
+  value: "TRUE"
 
 imagePullSecrets: []
 nameOverride: ""
