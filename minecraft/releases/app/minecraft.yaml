@@ -1,0 +1,21 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: minecraft
+  namespace: minecraft
+  annotations:
+    clusterconfig.azure.com/use-managed-source: "true"
+spec:
+  interval: 1m
+  releaseName: minecraft
+  chart:
+    spec:
+      chart: ./minecraft/charts/minecraft
+  values:
+    image:
+      repository: suhuruli.azurecr.io/minecraft
+      tag: 4.6.0
+    replicaCount: 5
+    env:
+      name: EULA
+      value: TRUE
