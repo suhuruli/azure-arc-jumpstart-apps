@@ -13,7 +13,7 @@ spec:
       chart: ./minecraft/charts/minecraft
   values:
     image:
-      repository: suhuruli.azurecr.io/minecraft
+      repository: suhuruli.azurecr.io/minecraft/minecraft
       tag: 4.6.0
     replicaCount: 5
     env:
