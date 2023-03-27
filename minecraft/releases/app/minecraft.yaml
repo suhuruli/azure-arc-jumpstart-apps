@@ -15,7 +15,6 @@ spec:
     image:
       repository: suhuruli.azurecr.io/minecraft/minecraft
       tag: 4.6.0
-    replicaCount: 5
     env:
       name: EULA
       value: TRUE
