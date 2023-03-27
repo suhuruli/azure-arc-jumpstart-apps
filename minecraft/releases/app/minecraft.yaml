@@ -13,8 +13,8 @@ spec:
       chart: ./minecraft/charts/minecraft
   values:
     image:
-      repository: suhuruli.azurecr.io/minecraft/minecraft
-      tag: 4.6.0
+      repository: itzg/minecraft-server
+      tag: latest
     minecraftServer:
       name: eula
       value: true
