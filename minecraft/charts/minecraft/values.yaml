@@ -22,6 +22,7 @@ ingress:
     - host: null
       paths:
         - path: /
+          pathType: ImplementationSpecific
           backend:
              service:
                 name: minecraft-minecraft
