@@ -12,9 +12,6 @@ spec:
     spec:
       chart: ./minecraft/charts/minecraft
   values:
-    image:
-      repository: itzg/minecraft-server
-      tag: latest
     minecraftServer:
       name: eula
       value: true
