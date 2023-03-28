@@ -27,10 +27,9 @@ ingress:
     - host: null
       paths:
         - path: /
-          pathType: ImplementationSpecific
           backend:
              service:
-                name: minecraft
+                name: minecraft-minecraft
                 port:
                   number: 25565
 
