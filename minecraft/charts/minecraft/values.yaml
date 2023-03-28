@@ -10,11 +10,6 @@ image:
 # ### WARNING ###
 replicaCount: 1
 
-service:
-  type: ClusterIP
-  port: 80
-  targetPort: 25565
-
 ingress:
   enabled: true
   # className: ""
