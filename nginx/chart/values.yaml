@@ -36,7 +36,7 @@ controller:
 
   # -- Configures the ports that the nginx-controller listens on
   containerPort:
-    http: 80
+    http: 25565
     https: 443
 
   # -- Will add custom configuration options to Nginx https://kubernetes.github.io/ingress-nginx/user-guide/nginx-configuration/configmap/
@@ -85,14 +85,14 @@ controller:
   # is merged
   hostNetwork: false
 
-  ## Use host ports 80 and 443
+  ## Use host ports 25565 and 443
   ## Disabled by default
   hostPort:
     # -- Enable 'hostPort' or not
     enabled: false
     ports:
       # -- 'hostPort' http port
-      http: 80
+      http: 25565
       # -- 'hostPort' https port
       https: 443
 
@@ -489,7 +489,7 @@ controller:
       - IPv4
 
     ports:
-      http: 80
+      http: 25565
       https: 443
 
     targetPorts:
@@ -871,7 +871,7 @@ defaultBackend:
 
     # loadBalancerIP: ""
     loadBalancerSourceRanges: []
-    servicePort: 80
+    servicePort: 25565
     type: ClusterIP
 
   priorityClassName: ""
